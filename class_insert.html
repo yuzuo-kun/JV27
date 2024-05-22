@@ -1,0 +1,97 @@
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	<title>名簿検索</title>
+</head>
+<body bgcolor="#ffffff">
+	class_insert.html
+	<center>
+		<caption><font size="+3" color="#0000ff">
+		<b>＜＜クラス名簿　登録＞＞</b>
+		</font></caption>
+		<br><br>
+	</center>
+	<br>
+	<center>
+		<br>
+		<form method="post" action="servlet/class_insert">
+			<font size="+2" color="deeppink">				
+				<table border="1" bordercolor="darkblue">
+					<tr>
+						<td bgcolor="darkblue">
+							<font color="white">
+								クラス記号
+							</font>
+						</td>
+						<td>
+							<select name="class_no" size="1">
+								<option value='1' selected>AT11A192</option>
+								<option value='2'>AT11B203</option>
+								<option value='3'>CG11A172</option>
+								<option value='4'>IT11A172</option>
+								<option value='5'>AT12A165</option>
+								<option value='6'>AT12B165</option>
+								<option value='7'>IH12A101</option>
+								<option value='8'>IW12A185</option>
+								<option value='9'>AP13A223</option>
+								<option value='10'>AT13A181</option>
+								<option value='11'>CD13A166</option>
+								<option value='12'>CT13A163</option>
+								<option value='13'>IH13A181</option>
+								<option value='14'>IW13A187</option>
+								<option value='15'>AP14A226</option>
+								<option value='16'>AT14A226</option>
+								<option value='17'>CT14A187</option>
+								<option value='18'>IH14A223</option>
+								<option value='19'>IW14A187</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td bgcolor="darkblue"><font color="white">入学年度</font></td>
+						<td>
+							<select name="nendo" size="1">
+								<option value='4' selected>2024</option>
+								<option value='5'>2025</option>
+								<option value='6'>2026</option>
+								<option value='7'>2027</option>
+								<option value='8'>2028</option>
+								<option value='9'>2029</option>
+								<option value='0'>2030</option>
+								<option value='1'>2031</option>
+								<option value='2'>2032</option>
+								<option value='3'>2033</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td bgcolor="darkblue"><font color="white">氏名（姓）</font></td>
+						<td><input type="text" name="simei_1" required></td>
+					</tr>
+					<tr>
+						<td bgcolor="darkblue"><font color="white">氏名（名）</font></td>
+						<td><input type="text" name="simei_2" required></td>
+					</tr>
+					<tr>
+						<td bgcolor="darkblue"><font color="white">カナ（姓）</font></td>
+						<td><input type="text" name="kana_1" required></td>
+					</tr>
+					<tr>
+						<td bgcolor="darkblue"><font color="white">カナ（名）</font></td>
+						<td><input type="text" name="kana_2" required></td>
+					</tr>
+					<tr>
+						<td bgcolor="darkblue"><font color="white">生年月日</font></td>
+						<td><input type="text" name="birth" required></td>
+					</tr>
+				</table>
+			</font>
+			<br>
+			<input type="submit" value="登録"><span> </span><input type="reset" value="入力クリア">
+		</form>
+	</center>
+	<br><br>
+	<hr>
+	<a href="class_index.html">メニューへ戻る</a>
+</body>
+</html>
